@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>WebsiteBanNuocHoa</display-name>
+	<!-- <welcome-file-list> <welcome-file>index.html</welcome-file> <welcome-file>index.jsp</welcome-file> 
+		<welcome-file>index.htm</welcome-file> <welcome-file>default.html</welcome-file> 
+		<welcome-file>default.jsp</welcome-file> <welcome-file>default.htm</welcome-file> 
+		</welcome-file-list> -->
+
+
+	<welcome-file-list>
+		<welcome-file>view/client/index.jsp</welcome-file>
+	</welcome-file-list>
+
+	<!--  <servlet>
+		<servlet-name>homePage</servlet-name>
+		<servlet-class>iuh.edu.controller.HomeController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>homePage</servlet-name>
+		<url-pattern></url-pattern>
+	</servlet-mapping> -->
+
+	<servlet>
+		<servlet-name>productDetail</servlet-name>
+		<servlet-class>iuh.edu.controller.ProductDetailController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>productDetail</servlet-name>
+		<url-pattern>/view/client/product-detail</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ProductListClient</servlet-name>
+		<servlet-class>iuh.edu.controller.ProductListClientController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ProductListClient</servlet-name>
+		<url-pattern>/view/client/product</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ProductListOfCategoryClient</servlet-name>
+		<servlet-class>iuh.edu.controller.ProductListOfCategoryClientController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ProductListOfCategoryClient</servlet-name>
+		<url-pattern>/view/client/product-id</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>ProductSearchByName</servlet-name>
+		<servlet-class>iuh.edu.controller.ProductSeachByNameController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ProductSearchByName</servlet-name>
+		<url-pattern>/view/client/product/search</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>listBoardnewClient</servlet-name>
+		<servlet-class>iuh.edu.controller.BoardnewListClientController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>listBoardnewClient</servlet-name>
+		<url-pattern>/view/client/news-list</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>listBoardnewClientDetail</servlet-name>
+		<servlet-class>nongsan.webmvc.controller.BoardnewListClientDetailController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>listBoardnewClientDetail</servlet-name>
+		<url-pattern>/view/client/news-list-detail</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>introduce</servlet-name>
+		<servlet-class>iuh.edu.controller.IntroduceController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>introduce</servlet-name>
+		<url-pattern>/view/client/introduce</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>order</servlet-name>
+		<servlet-class>iuh.edu.controller.OrderController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>order</servlet-name>
+		<url-pattern>/view/client/order</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>security</servlet-name>
+		<servlet-class>iuh.edu.controller.SecurityController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>security</servlet-name>
+		<url-pattern>/view/client/security</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>payment</servlet-name>
+		<servlet-class>iuh.edu.controller.PaymentController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>payment</servlet-name>
+		<url-pattern>/view/client/payment</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>contact</servlet-name>
+		<servlet-class>iuh.edu.controller.ContactController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>contact</servlet-name>
+		<url-pattern>/view/client/contact</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AddtoCartController</servlet-name>
+		<servlet-class>iuh.edu.controller.AddtoCartController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddtoCartController</servlet-name>
+		<url-pattern>/view/client/add-cart</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>CheckoutController</servlet-name>
+		<servlet-class>iuh.edu.controller.CheckoutController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CheckoutController</servlet-name>
+		<url-pattern>/view/client/checkout</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>CartController</servlet-name>
+		<servlet-class>iuh.edu.controller.CartController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CartController</servlet-name>
+		<url-pattern>/view/client/cart</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ClientLogin</servlet-name>
+		<servlet-class>iuh.edu.controller.LoginController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ClientLogin</servlet-name>
+		<url-pattern>/view/client/login</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>submitReview</servlet-name>
+		<servlet-class>iuh.edu.controller.ReviewClientController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>submitReview</servlet-name>
+		<url-pattern>/view/client/review</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ClientRegister</servlet-name>
+		<servlet-class>iuh.edu.controller.RegistrationController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ClientRegister</servlet-name>
+		<url-pattern>/view/client/register</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>LogoutClient</servlet-name>
+		<servlet-class>iuh.edu.controller.LogoutController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>LogoutClient</servlet-name>
+		<url-pattern>/view/client/logout</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>TransactionClient</servlet-name>
+		<servlet-class>iuh.edu.controller.TransactionController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>TransactionClient</servlet-name>
+		<url-pattern>/view/client/transaction</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>listOrder</servlet-name>
+		<servlet-class>iuh.edu.controller.admin.OrderListController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>listOrder</servlet-name>
+		<url-pattern>/admin/order/list</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>listOrderdetail</servlet-name>
+		<servlet-class>iuh.edu.controller.admin.OrderdetailListController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>listOrderdetail</servlet-name>
+		<url-pattern>/admin/order/list-detail</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>deleteOrder</servlet-name>
+		<servlet-class>iuh.edu.controller.admin.OrderDeleteController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>deleteOrder</servlet-name>
+		<url-pattern>/admin/order/delete</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>editOrder</servlet-name>
+		<servlet-class>iuh.edu.controller.admin.OrderEditController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>editOrder</servlet-name>
+		<url-pattern>/admin/order/edit</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>deleteProductInCart</servlet-name>
+		<servlet-class>iuh.edu.controller.DeleteProductInCartController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>deleteProductInCart</servlet-name>
+		<url-pattern>/view/client/cart-delete</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>UpdateCart</servlet-name>
+		<servlet-class>iuh.edu.controller.UpdateCartController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateCart</servlet-name>
+		<url-pattern>/view/client/cart-update</url-pattern>
+	</servlet-mapping>
+</web-app>
